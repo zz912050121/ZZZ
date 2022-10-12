@@ -1,0 +1,34 @@
+{
+    "docdash": {
+        "static": true,
+        "sort": true,
+        "search": true,
+        "collapse": true,
+        "typedefs": true,
+        "removeQuotes": "none",
+        "script": []
+    },
+    "source": {
+        "include": ["api/server"],
+        "includePattern": "\\.js$",
+        "excludePattern": "(node_modules/)"
+    },
+    "opts": {
+        "template": "node_modules/docdash",
+        "encoding": "utf8",
+        "destination": "./docs/",
+        "recurse": true,
+        "verbose": true
+    },
+    "templates": {
+        "default": {
+            "outputSourceFiles": false,
+            "useLongnameInNav": true
+        }
+    },
+    "tags": {
+        "allowUnknownTags": false
+    },
+
+    "plugins": ["plugins/markdown"]
+}
